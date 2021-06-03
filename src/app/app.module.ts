@@ -9,10 +9,17 @@ import { HeaderComponent } from './components/header/header.component';
 import { HeroComponent } from './components/hero/hero.component';
 import { AboutComponent } from './components/about/about.component';
 import { ResumeComponent } from './components/resume/resume.component';
-import { PortfplioComponent } from './components/portfplio/portfplio.component';
+import { PortfolioComponent } from './components/portfolio/portfolio.component';
 
 @NgModule({
-  declarations: [AppComponent, HeaderComponent, HeroComponent, AboutComponent, ResumeComponent, PortfplioComponent],
+  declarations: [
+    AppComponent,
+    HeaderComponent,
+    HeroComponent,
+    AboutComponent,
+    ResumeComponent,
+    PortfolioComponent,
+  ],
   imports: [
     BrowserModule,
     AppRoutingModule,
