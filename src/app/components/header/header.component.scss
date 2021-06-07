@@ -8,6 +8,7 @@
   height: 100vh;
   color: #fff;
   transition: 0.2s all ease;
+  overflow-y: auto;
 
   &__image-container {
     margin: 50px auto 10px;
@@ -32,20 +33,49 @@
   }
 
   &__nav {
-    margin-top: 30px;
+    //margin-top: 30px;
+    // position: relative;
+    // flex-wrap: wrap;
+    // align-items: center;
+    // justify-content: space-between;
+    // .nav-menu {
+    //   padding: 0;
+    //   display: block;
+    // }
+    title {
+      background-color: salmon;
+    }
     nav {
       ul {
         list-style: none;
+
         li {
           padding: 10px 0;
+
           a {
             color: #fff;
             text-decoration: none;
+
             &:hover {
               color: $main_color;
+              display: block;
             }
           }
         }
+      }
+    }
+    .nav-link {
+      display: block;
+    }
+    // :root {
+    //   --swiper-navigation-size: 44px;
+    //   --swiper-theme-color: #007aff;
+    // }
+    button {
+      border-radius: 40px;
+      &:hover {
+        color: $main_color;
+        display: block;
       }
     }
   }
