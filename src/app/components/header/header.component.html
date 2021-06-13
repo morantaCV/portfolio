@@ -70,6 +70,11 @@
 
 <div class="menu-btn-container">
   <button mat-fab (click)="toggleMenu()">
-    <i class="fas fa-bars"></i>
+    <div *ngIf="!isActive; else notActive">
+      <i class="fas fa-bars"></i>
+    </div>
+    <ng-template #notActive>
+      <i class="fas fa-times"></i>
+    </ng-template>
   </button>
 </div>
